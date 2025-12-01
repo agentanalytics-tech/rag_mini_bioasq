@@ -1,0 +1,13 @@
+Step 1 - run get_data, it will download the data from huggingface repo containing the rag bioasq data set.
+this will create csv file query_map.csv and data files in source_data folder
+
+Step 2 - prepare_data_id.py will create the evaluation set where we append the document with their 
+correct query ids and store in processed_data folder 
+
+Step 3 & 4: 
+Data upload using WaveflowDB and pinecone credentials
+
+Step 5:
+Running pipeline.py which will create final results in results folder
+
+Please note, with provided .env file you can directly run Step 5 and 

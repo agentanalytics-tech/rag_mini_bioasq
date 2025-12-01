@@ -1,0 +1,19 @@
+Step 1
+Go to - https://github.com/google-deepmind/limit/tree/main/data/limit
+Download files - corpus.jsonl , qrels.jsonl & queries.jsonl
+save these files in "source_data" folder
+
+Step 2
+create_data.py will access corpus.jsonl and create data in staging_data folder
+query_map.csv is created using query_map.py in source_data
+
+Step 3:
+Using query_map.py new folder is processed_data which contains data ready to upload in pinecone and waveflowDB
+
+Step 4 & 5: 
+Data upload using WaveflowDB and pinecone credentials
+
+Step 6:
+Running 6_pipeline.py which will create final results in results folder
+
+Please note, with provided .env file you can directly run Step 6 and validate the results.
